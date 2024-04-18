@@ -1,0 +1,581 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    IDK
+
+Grammar
+
+Rule 0     S' -> statement
+Rule 1     statement -> expression ENDINSTR
+Rule 2     statement -> print ENDINSTR
+Rule 3     statement -> zigoto ENDINSTR
+Rule 4     statement -> bendew ENDINSTR
+Rule 5     statement -> what_is_it ENDINSTR
+Rule 6     statement -> shesh ENDINSTR
+Rule 7     statement -> yes ENDINSTR
+Rule 8     statement -> im_a_hacker ENDINSTR
+Rule 9     statement -> suuu ENDINSTR
+Rule 10    statement -> help ENDINSTR
+Rule 11    statement -> license ENDINSTR
+Rule 12    statement -> i_hate_this_lang ENDINSTR
+Rule 13    expression -> expression PLS_ADD expression
+Rule 14    expression -> expression PLS_SUB expression
+Rule 15    expression -> expression IM_BATMAN expression
+Rule 16    expression -> expression YAY expression
+Rule 17    expression -> NUM
+Rule 18    print -> BRO_SAY STR
+Rule 19    zigoto -> ZIGOTO
+Rule 20    bendew -> BENDEW
+Rule 21    what_is_it -> WHAT_IS_IT
+Rule 22    shesh -> SHEEEEEEEESH
+Rule 23    yes -> YES
+Rule 24    im_a_hacker -> IM_A_HACKER
+Rule 25    suuu -> SUUUUUUUUUUU
+Rule 26    help -> HELP
+Rule 27    license -> LICENSE
+Rule 28    i_hate_this_lang -> I_HATE_THIS_LANG
+
+Terminals, with rules where they appear
+
+BENDEW               : 20
+BRO_SAY              : 18
+ENDINSTR             : 1 2 3 4 5 6 7 8 9 10 11 12
+HELP                 : 26
+IDK                  : 
+IM_A_HACKER          : 24
+IM_BATMAN            : 15
+I_HATE_THIS_LANG     : 28
+LICENSE              : 27
+NUM                  : 17
+PLS_ADD              : 13
+PLS_SUB              : 14
+SHEEEEEEEESH         : 22
+STR                  : 18
+SUUUUUUUUUUU         : 25
+WHAT_IS_IT           : 21
+YAY                  : 16
+YES                  : 23
+ZIGOTO               : 19
+error                : 
+
+Nonterminals, with rules where they appear
+
+bendew               : 4
+expression           : 1 13 13 14 14 15 15 16 16
+help                 : 10
+i_hate_this_lang     : 12
+im_a_hacker          : 8
+license              : 11
+print                : 2
+shesh                : 6
+statement            : 0
+suuu                 : 9
+what_is_it           : 5
+yes                  : 7
+zigoto               : 3
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . statement
+    (1) statement -> . expression ENDINSTR
+    (2) statement -> . print ENDINSTR
+    (3) statement -> . zigoto ENDINSTR
+    (4) statement -> . bendew ENDINSTR
+    (5) statement -> . what_is_it ENDINSTR
+    (6) statement -> . shesh ENDINSTR
+    (7) statement -> . yes ENDINSTR
+    (8) statement -> . im_a_hacker ENDINSTR
+    (9) statement -> . suuu ENDINSTR
+    (10) statement -> . help ENDINSTR
+    (11) statement -> . license ENDINSTR
+    (12) statement -> . i_hate_this_lang ENDINSTR
+    (13) expression -> . expression PLS_ADD expression
+    (14) expression -> . expression PLS_SUB expression
+    (15) expression -> . expression IM_BATMAN expression
+    (16) expression -> . expression YAY expression
+    (17) expression -> . NUM
+    (18) print -> . BRO_SAY STR
+    (19) zigoto -> . ZIGOTO
+    (20) bendew -> . BENDEW
+    (21) what_is_it -> . WHAT_IS_IT
+    (22) shesh -> . SHEEEEEEEESH
+    (23) yes -> . YES
+    (24) im_a_hacker -> . IM_A_HACKER
+    (25) suuu -> . SUUUUUUUUUUU
+    (26) help -> . HELP
+    (27) license -> . LICENSE
+    (28) i_hate_this_lang -> . I_HATE_THIS_LANG
+
+    NUM             shift and go to state 14
+    BRO_SAY         shift and go to state 15
+    ZIGOTO          shift and go to state 16
+    BENDEW          shift and go to state 17
+    WHAT_IS_IT      shift and go to state 18
+    SHEEEEEEEESH    shift and go to state 19
+    YES             shift and go to state 20
+    IM_A_HACKER     shift and go to state 21
+    SUUUUUUUUUUU    shift and go to state 22
+    HELP            shift and go to state 23
+    LICENSE         shift and go to state 24
+    I_HATE_THIS_LANG shift and go to state 25
+
+    statement                      shift and go to state 1
+    expression                     shift and go to state 2
+    print                          shift and go to state 3
+    zigoto                         shift and go to state 4
+    bendew                         shift and go to state 5
+    what_is_it                     shift and go to state 6
+    shesh                          shift and go to state 7
+    yes                            shift and go to state 8
+    im_a_hacker                    shift and go to state 9
+    suuu                           shift and go to state 10
+    help                           shift and go to state 11
+    license                        shift and go to state 12
+    i_hate_this_lang               shift and go to state 13
+
+state 1
+
+    (0) S' -> statement .
+
+
+
+state 2
+
+    (1) statement -> expression . ENDINSTR
+    (13) expression -> expression . PLS_ADD expression
+    (14) expression -> expression . PLS_SUB expression
+    (15) expression -> expression . IM_BATMAN expression
+    (16) expression -> expression . YAY expression
+
+    ENDINSTR        shift and go to state 26
+    PLS_ADD         shift and go to state 27
+    PLS_SUB         shift and go to state 28
+    IM_BATMAN       shift and go to state 29
+    YAY             shift and go to state 30
+
+
+state 3
+
+    (2) statement -> print . ENDINSTR
+
+    ENDINSTR        shift and go to state 31
+
+
+state 4
+
+    (3) statement -> zigoto . ENDINSTR
+
+    ENDINSTR        shift and go to state 32
+
+
+state 5
+
+    (4) statement -> bendew . ENDINSTR
+
+    ENDINSTR        shift and go to state 33
+
+
+state 6
+
+    (5) statement -> what_is_it . ENDINSTR
+
+    ENDINSTR        shift and go to state 34
+
+
+state 7
+
+    (6) statement -> shesh . ENDINSTR
+
+    ENDINSTR        shift and go to state 35
+
+
+state 8
+
+    (7) statement -> yes . ENDINSTR
+
+    ENDINSTR        shift and go to state 36
+
+
+state 9
+
+    (8) statement -> im_a_hacker . ENDINSTR
+
+    ENDINSTR        shift and go to state 37
+
+
+state 10
+
+    (9) statement -> suuu . ENDINSTR
+
+    ENDINSTR        shift and go to state 38
+
+
+state 11
+
+    (10) statement -> help . ENDINSTR
+
+    ENDINSTR        shift and go to state 39
+
+
+state 12
+
+    (11) statement -> license . ENDINSTR
+
+    ENDINSTR        shift and go to state 40
+
+
+state 13
+
+    (12) statement -> i_hate_this_lang . ENDINSTR
+
+    ENDINSTR        shift and go to state 41
+
+
+state 14
+
+    (17) expression -> NUM .
+
+    ENDINSTR        reduce using rule 17 (expression -> NUM .)
+    PLS_ADD         reduce using rule 17 (expression -> NUM .)
+    PLS_SUB         reduce using rule 17 (expression -> NUM .)
+    IM_BATMAN       reduce using rule 17 (expression -> NUM .)
+    YAY             reduce using rule 17 (expression -> NUM .)
+
+
+state 15
+
+    (18) print -> BRO_SAY . STR
+
+    STR             shift and go to state 42
+
+
+state 16
+
+    (19) zigoto -> ZIGOTO .
+
+    ENDINSTR        reduce using rule 19 (zigoto -> ZIGOTO .)
+
+
+state 17
+
+    (20) bendew -> BENDEW .
+
+    ENDINSTR        reduce using rule 20 (bendew -> BENDEW .)
+
+
+state 18
+
+    (21) what_is_it -> WHAT_IS_IT .
+
+    ENDINSTR        reduce using rule 21 (what_is_it -> WHAT_IS_IT .)
+
+
+state 19
+
+    (22) shesh -> SHEEEEEEEESH .
+
+    ENDINSTR        reduce using rule 22 (shesh -> SHEEEEEEEESH .)
+
+
+state 20
+
+    (23) yes -> YES .
+
+    ENDINSTR        reduce using rule 23 (yes -> YES .)
+
+
+state 21
+
+    (24) im_a_hacker -> IM_A_HACKER .
+
+    ENDINSTR        reduce using rule 24 (im_a_hacker -> IM_A_HACKER .)
+
+
+state 22
+
+    (25) suuu -> SUUUUUUUUUUU .
+
+    ENDINSTR        reduce using rule 25 (suuu -> SUUUUUUUUUUU .)
+
+
+state 23
+
+    (26) help -> HELP .
+
+    ENDINSTR        reduce using rule 26 (help -> HELP .)
+
+
+state 24
+
+    (27) license -> LICENSE .
+
+    ENDINSTR        reduce using rule 27 (license -> LICENSE .)
+
+
+state 25
+
+    (28) i_hate_this_lang -> I_HATE_THIS_LANG .
+
+    ENDINSTR        reduce using rule 28 (i_hate_this_lang -> I_HATE_THIS_LANG .)
+
+
+state 26
+
+    (1) statement -> expression ENDINSTR .
+
+    $end            reduce using rule 1 (statement -> expression ENDINSTR .)
+
+
+state 27
+
+    (13) expression -> expression PLS_ADD . expression
+    (13) expression -> . expression PLS_ADD expression
+    (14) expression -> . expression PLS_SUB expression
+    (15) expression -> . expression IM_BATMAN expression
+    (16) expression -> . expression YAY expression
+    (17) expression -> . NUM
+
+    NUM             shift and go to state 14
+
+    expression                     shift and go to state 43
+
+state 28
+
+    (14) expression -> expression PLS_SUB . expression
+    (13) expression -> . expression PLS_ADD expression
+    (14) expression -> . expression PLS_SUB expression
+    (15) expression -> . expression IM_BATMAN expression
+    (16) expression -> . expression YAY expression
+    (17) expression -> . NUM
+
+    NUM             shift and go to state 14
+
+    expression                     shift and go to state 44
+
+state 29
+
+    (15) expression -> expression IM_BATMAN . expression
+    (13) expression -> . expression PLS_ADD expression
+    (14) expression -> . expression PLS_SUB expression
+    (15) expression -> . expression IM_BATMAN expression
+    (16) expression -> . expression YAY expression
+    (17) expression -> . NUM
+
+    NUM             shift and go to state 14
+
+    expression                     shift and go to state 45
+
+state 30
+
+    (16) expression -> expression YAY . expression
+    (13) expression -> . expression PLS_ADD expression
+    (14) expression -> . expression PLS_SUB expression
+    (15) expression -> . expression IM_BATMAN expression
+    (16) expression -> . expression YAY expression
+    (17) expression -> . NUM
+
+    NUM             shift and go to state 14
+
+    expression                     shift and go to state 46
+
+state 31
+
+    (2) statement -> print ENDINSTR .
+
+    $end            reduce using rule 2 (statement -> print ENDINSTR .)
+
+
+state 32
+
+    (3) statement -> zigoto ENDINSTR .
+
+    $end            reduce using rule 3 (statement -> zigoto ENDINSTR .)
+
+
+state 33
+
+    (4) statement -> bendew ENDINSTR .
+
+    $end            reduce using rule 4 (statement -> bendew ENDINSTR .)
+
+
+state 34
+
+    (5) statement -> what_is_it ENDINSTR .
+
+    $end            reduce using rule 5 (statement -> what_is_it ENDINSTR .)
+
+
+state 35
+
+    (6) statement -> shesh ENDINSTR .
+
+    $end            reduce using rule 6 (statement -> shesh ENDINSTR .)
+
+
+state 36
+
+    (7) statement -> yes ENDINSTR .
+
+    $end            reduce using rule 7 (statement -> yes ENDINSTR .)
+
+
+state 37
+
+    (8) statement -> im_a_hacker ENDINSTR .
+
+    $end            reduce using rule 8 (statement -> im_a_hacker ENDINSTR .)
+
+
+state 38
+
+    (9) statement -> suuu ENDINSTR .
+
+    $end            reduce using rule 9 (statement -> suuu ENDINSTR .)
+
+
+state 39
+
+    (10) statement -> help ENDINSTR .
+
+    $end            reduce using rule 10 (statement -> help ENDINSTR .)
+
+
+state 40
+
+    (11) statement -> license ENDINSTR .
+
+    $end            reduce using rule 11 (statement -> license ENDINSTR .)
+
+
+state 41
+
+    (12) statement -> i_hate_this_lang ENDINSTR .
+
+    $end            reduce using rule 12 (statement -> i_hate_this_lang ENDINSTR .)
+
+
+state 42
+
+    (18) print -> BRO_SAY STR .
+
+    ENDINSTR        reduce using rule 18 (print -> BRO_SAY STR .)
+
+
+state 43
+
+    (13) expression -> expression PLS_ADD expression .
+    (13) expression -> expression . PLS_ADD expression
+    (14) expression -> expression . PLS_SUB expression
+    (15) expression -> expression . IM_BATMAN expression
+    (16) expression -> expression . YAY expression
+
+  ! shift/reduce conflict for PLS_ADD resolved as shift
+  ! shift/reduce conflict for PLS_SUB resolved as shift
+  ! shift/reduce conflict for IM_BATMAN resolved as shift
+  ! shift/reduce conflict for YAY resolved as shift
+    ENDINSTR        reduce using rule 13 (expression -> expression PLS_ADD expression .)
+    PLS_ADD         shift and go to state 27
+    PLS_SUB         shift and go to state 28
+    IM_BATMAN       shift and go to state 29
+    YAY             shift and go to state 30
+
+  ! PLS_ADD         [ reduce using rule 13 (expression -> expression PLS_ADD expression .) ]
+  ! PLS_SUB         [ reduce using rule 13 (expression -> expression PLS_ADD expression .) ]
+  ! IM_BATMAN       [ reduce using rule 13 (expression -> expression PLS_ADD expression .) ]
+  ! YAY             [ reduce using rule 13 (expression -> expression PLS_ADD expression .) ]
+
+
+state 44
+
+    (14) expression -> expression PLS_SUB expression .
+    (13) expression -> expression . PLS_ADD expression
+    (14) expression -> expression . PLS_SUB expression
+    (15) expression -> expression . IM_BATMAN expression
+    (16) expression -> expression . YAY expression
+
+  ! shift/reduce conflict for PLS_ADD resolved as shift
+  ! shift/reduce conflict for PLS_SUB resolved as shift
+  ! shift/reduce conflict for IM_BATMAN resolved as shift
+  ! shift/reduce conflict for YAY resolved as shift
+    ENDINSTR        reduce using rule 14 (expression -> expression PLS_SUB expression .)
+    PLS_ADD         shift and go to state 27
+    PLS_SUB         shift and go to state 28
+    IM_BATMAN       shift and go to state 29
+    YAY             shift and go to state 30
+
+  ! PLS_ADD         [ reduce using rule 14 (expression -> expression PLS_SUB expression .) ]
+  ! PLS_SUB         [ reduce using rule 14 (expression -> expression PLS_SUB expression .) ]
+  ! IM_BATMAN       [ reduce using rule 14 (expression -> expression PLS_SUB expression .) ]
+  ! YAY             [ reduce using rule 14 (expression -> expression PLS_SUB expression .) ]
+
+
+state 45
+
+    (15) expression -> expression IM_BATMAN expression .
+    (13) expression -> expression . PLS_ADD expression
+    (14) expression -> expression . PLS_SUB expression
+    (15) expression -> expression . IM_BATMAN expression
+    (16) expression -> expression . YAY expression
+
+  ! shift/reduce conflict for PLS_ADD resolved as shift
+  ! shift/reduce conflict for PLS_SUB resolved as shift
+  ! shift/reduce conflict for IM_BATMAN resolved as shift
+  ! shift/reduce conflict for YAY resolved as shift
+    ENDINSTR        reduce using rule 15 (expression -> expression IM_BATMAN expression .)
+    PLS_ADD         shift and go to state 27
+    PLS_SUB         shift and go to state 28
+    IM_BATMAN       shift and go to state 29
+    YAY             shift and go to state 30
+
+  ! PLS_ADD         [ reduce using rule 15 (expression -> expression IM_BATMAN expression .) ]
+  ! PLS_SUB         [ reduce using rule 15 (expression -> expression IM_BATMAN expression .) ]
+  ! IM_BATMAN       [ reduce using rule 15 (expression -> expression IM_BATMAN expression .) ]
+  ! YAY             [ reduce using rule 15 (expression -> expression IM_BATMAN expression .) ]
+
+
+state 46
+
+    (16) expression -> expression YAY expression .
+    (13) expression -> expression . PLS_ADD expression
+    (14) expression -> expression . PLS_SUB expression
+    (15) expression -> expression . IM_BATMAN expression
+    (16) expression -> expression . YAY expression
+
+  ! shift/reduce conflict for PLS_ADD resolved as shift
+  ! shift/reduce conflict for PLS_SUB resolved as shift
+  ! shift/reduce conflict for IM_BATMAN resolved as shift
+  ! shift/reduce conflict for YAY resolved as shift
+    ENDINSTR        reduce using rule 16 (expression -> expression YAY expression .)
+    PLS_ADD         shift and go to state 27
+    PLS_SUB         shift and go to state 28
+    IM_BATMAN       shift and go to state 29
+    YAY             shift and go to state 30
+
+  ! PLS_ADD         [ reduce using rule 16 (expression -> expression YAY expression .) ]
+  ! PLS_SUB         [ reduce using rule 16 (expression -> expression YAY expression .) ]
+  ! IM_BATMAN       [ reduce using rule 16 (expression -> expression YAY expression .) ]
+  ! YAY             [ reduce using rule 16 (expression -> expression YAY expression .) ]
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for PLS_ADD in state 43 resolved as shift
+WARNING: shift/reduce conflict for PLS_SUB in state 43 resolved as shift
+WARNING: shift/reduce conflict for IM_BATMAN in state 43 resolved as shift
+WARNING: shift/reduce conflict for YAY in state 43 resolved as shift
+WARNING: shift/reduce conflict for PLS_ADD in state 44 resolved as shift
+WARNING: shift/reduce conflict for PLS_SUB in state 44 resolved as shift
+WARNING: shift/reduce conflict for IM_BATMAN in state 44 resolved as shift
+WARNING: shift/reduce conflict for YAY in state 44 resolved as shift
+WARNING: shift/reduce conflict for PLS_ADD in state 45 resolved as shift
+WARNING: shift/reduce conflict for PLS_SUB in state 45 resolved as shift
+WARNING: shift/reduce conflict for IM_BATMAN in state 45 resolved as shift
+WARNING: shift/reduce conflict for YAY in state 45 resolved as shift
+WARNING: shift/reduce conflict for PLS_ADD in state 46 resolved as shift
+WARNING: shift/reduce conflict for PLS_SUB in state 46 resolved as shift
+WARNING: shift/reduce conflict for IM_BATMAN in state 46 resolved as shift
+WARNING: shift/reduce conflict for YAY in state 46 resolved as shift
